@@ -2,27 +2,24 @@ package com.myapplicationdev.android.demoalarmmanager;
 
 import android.os.Bundle;
 
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.view.View;
-
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
-
-import com.myapplicationdev.android.demoalarmmanager.databinding.ActivityAlarmReceiverBinding;
+import android.util.Log;
+import android.widget.TextView;
 
 public class AlarmReceiverActivity extends AppCompatActivity {
 
+    TextView tv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_alarm_receiver);
 
+        tv = findViewById(R.id.textView);
 
+        Log.d("TAG", tv.getText().toString());
 
     }
 
